@@ -37,6 +37,9 @@ public class EditEventActivity extends Activity {
 
         if (mEvent != null) {
 
+
+            // TEST CHANGES!!!!
+
             TODO
             // populate all the text fields n' shit with mEvent
 
