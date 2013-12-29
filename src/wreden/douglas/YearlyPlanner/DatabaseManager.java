@@ -1,8 +1,8 @@
-package com.example.YearlyPlanner;
-
-import android.content.Context;
+package wreden.douglas.YearlyPlanner;
 
 import java.util.ArrayList;
+
+import android.content.Context;
 
 public class DatabaseManager {
 

@@ -27,7 +27,7 @@
     <ignored path="YearlyPlanner.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388338874613" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388344824969" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388347603836" ignored="false" />
     <file path="/main.xml" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388210076078" ignored="false" />
     <file path="$PROJECT_DIR$/../../the-weekly-race/src/com/coolstorybros/the_weekly_race/CurrentRacesActivity.java" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388097778320" ignored="false" />
     <file path="$PROJECT_DIR$/../../the-weekly-race/src/com/coolstorybros/the_weekly_race/RaceDetailsActivity.java" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388097812178" ignored="false" />
@@ -39,7 +39,7 @@
     <file path="/MainActivity.java" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388301668953" ignored="false" />
     <file path="/DatabaseHelper.java" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388110009687" ignored="false" />
     <file path="/Event.java" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388109286915" ignored="false" />
-    <file path="/MonthListView.java" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388301762895" ignored="false" />
+    <file path="/MonthListView.java" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388347625415" ignored="false" />
     <file path="$USER_HOME$/android/p90x/res/layout/fragment_tutorial.xml" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388207714923" ignored="false" />
     <file path="/MonthsAdapter.java" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388215196414" ignored="false" />
     <file path="/DatabaseManager.java" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388213128046" ignored="false" />
@@ -110,28 +110,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5345268">
       <split-first>
         <leaf>
-          <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/example/YearlyPlanner/MainActivity.java">
+          <file leaf-file-name="MonthListView.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MonthListView.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="43" selection-start="425" selection-end="437" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MonthListView.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/example/YearlyPlanner/MonthListView.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="48" column="17" selection-start="1463" selection-end="1463" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="EditEventActivity.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/com/example/YearlyPlanner/EditEventActivity.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="40" column="31" selection-start="895" selection-end="895" vertical-scroll-proportion="0.6591928">
+                <state line="11" column="13" selection-start="263" selection-end="263" vertical-scroll-proportion="-0.8953356">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -139,10 +121,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="view_event.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/res/layout/view_event.xml">
+          <file leaf-file-name="DatabaseHelper.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/DatabaseHelper.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="18" column="13" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DatabaseManager.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/DatabaseManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="6" column="13" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="activity_edit_event.xml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/res/layout/activity_edit_event.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="9" column="48" selection-start="364" selection-end="364" vertical-scroll-proportion="-6.12">
                   <folding />
                 </state>
               </provider>
@@ -151,28 +151,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DatabaseManager.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/example/YearlyPlanner/DatabaseManager.java">
+          <file leaf-file-name="EditEventActivity.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/EditEventActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="42" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
+                <state line="16" column="44" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="Event.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/example/YearlyPlanner/Event.java">
+            <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/Event.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="24" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
+                <state line="5" column="13" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="gray_background.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/res/drawable-xhdpi/gray_background.xml">
+          <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="37" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+                <state line="2" column="33" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -187,20 +187,22 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="colors.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
+          <file leaf-file-name="MonthsAdapter.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MonthsAdapter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="36" selection-start="252" selection-end="258" vertical-scroll-proportion="0.0">
+                <state line="9" column="13" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MainActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="18" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
-                  <folding />
+                <state line="6" column="37" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -212,7 +214,7 @@
           <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="48" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
+                <state line="22" column="48" selection-start="878" selection-end="878" vertical-scroll-proportion="-0.68">
                   <folding />
                 </state>
               </provider>
@@ -221,31 +223,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MonthsAdapter.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/example/YearlyPlanner/MonthsAdapter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="40" column="44" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="view_month_list.xml" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="view_month_list.xml" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/res/layout/view_month_list.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="63" column="44" selection-start="2412" selection-end="2427" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-              <provider editor-type-id="android-designer">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="activity_edit_event.xml" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/res/layout/activity_edit_event.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="4" selection-start="893" selection-end="893" vertical-scroll-proportion="0.49774775">
+                <state line="63" column="44" selection-start="2412" selection-end="2427" vertical-scroll-proportion="0.7511261">
                   <folding />
                 </state>
               </provider>
@@ -266,7 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/res/drawable-xhdpi/gray_background.xml" />
         <option value="$PROJECT_DIR$/res/drawable-xhdpi/new_event_background.xml" />
         <option value="$PROJECT_DIR$/src/com/example/YearlyPlanner/Event.java" />
@@ -278,9 +258,11 @@
         <option value="$PROJECT_DIR$/res/layout/view_event.xml" />
         <option value="$PROJECT_DIR$/src/com/example/YearlyPlanner/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/YearlyPlanner/MonthListView.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/layout/activity_edit_event.xml" />
         <option value="$PROJECT_DIR$/src/com/example/YearlyPlanner/EditEventActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MonthListView.java" />
+        <option value="$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -324,6 +306,84 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YearlyPlanner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yearly-planner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YearlyPlanner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yearly-planner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YearlyPlanner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YearlyPlanner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yearly-planner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YearlyPlanner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yearly-planner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YearlyPlanner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yearly-planner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -349,6 +409,9 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gloudas\Documents\GitHub\yearly-planner\src\wreden\douglas\YearlyPlanner" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Gloudas\Documents\GitHub\CS162\YearlyPlanner\res\drawable-xhdpi" />
     </key>
@@ -532,6 +595,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2762431" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -551,7 +615,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20971303" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2762431" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -622,42 +685,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="36" selection-start="252" selection-end="258" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-xhdpi/gray_background.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="37" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-xhdpi/new_event_background.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="40" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/YearlyPlanner/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="24" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/YearlyPlanner/DatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="20" selection-start="2953" selection-end="2953" vertical-scroll-proportion="0.31653887" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/YearlyPlanner/DatabaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="42" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -672,40 +702,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/YearlyPlanner/MonthsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="44" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="48" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/YearlyPlanner/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="43" selection-start="425" selection-end="437" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/YearlyPlanner/MonthListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="17" selection-start="1463" selection-end="1463" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/view_month_list.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="44" selection-start="2412" selection-end="2427" vertical-scroll-proportion="0.0">
+        <state line="22" column="48" selection-start="878" selection-end="878" vertical-scroll-proportion="-0.68">
           <folding />
         </state>
       </provider>
@@ -715,21 +714,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="45" selection-start="478" selection-end="478" vertical-scroll-proportion="0.19058296">
+        <state line="2" column="33" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
+        <state line="2" column="18" selection-start="69" selection-end="69" vertical-scroll-proportion="0.038116593">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_edit_event.xml">
+    <entry file="file://$PROJECT_DIR$/res/drawable-xhdpi/new_event_background.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="4" selection-start="893" selection-end="893" vertical-scroll-proportion="0.49774775">
+        <state line="6" column="40" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MonthsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/view_month_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="44" selection-start="2412" selection-end="2427" vertical-scroll-proportion="0.7511261">
           <folding />
         </state>
       </provider>
@@ -737,9 +750,56 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/YearlyPlanner/EditEventActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/DatabaseHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="31" selection-start="895" selection-end="895" vertical-scroll-proportion="0.6591928">
+        <state line="18" column="13" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/DatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_edit_event.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="48" selection-start="364" selection-end="364" vertical-scroll-proportion="-6.12">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="37" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/EditEventActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="44" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MonthListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="263" selection-end="263" vertical-scroll-proportion="-0.8953356">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

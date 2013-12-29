@@ -1,13 +1,10 @@
-package com.example.YearlyPlanner;
+package wreden.douglas.YearlyPlanner;
 
 import android.app.Activity;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.text.format.Time;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 public class MainActivity extends Activity
 {

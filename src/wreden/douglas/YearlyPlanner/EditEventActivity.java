@@ -1,8 +1,10 @@
-package com.example.YearlyPlanner;
+package wreden.douglas.YearlyPlanner;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.example.YearlyPlanner.R;
 
 public class EditEventActivity extends Activity {
 

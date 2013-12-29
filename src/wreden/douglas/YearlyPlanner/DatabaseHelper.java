@@ -1,4 +1,6 @@
-package com.example.YearlyPlanner;
+package wreden.douglas.YearlyPlanner;
+
+import java.util.ArrayList;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,8 +8,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
-
-import java.util.ArrayList;
 
 /**
  * Defines database schemas and provides implementation of all database methods

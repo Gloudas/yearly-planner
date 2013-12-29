@@ -1,4 +1,4 @@
-package com.example.YearlyPlanner;
+package wreden.douglas.YearlyPlanner;
 
 import android.content.ContentValues;
 import android.database.Cursor;
