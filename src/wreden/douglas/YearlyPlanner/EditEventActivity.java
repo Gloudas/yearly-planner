@@ -63,7 +63,7 @@ public class EditEventActivity extends Activity {
 
         OnWheelChangedListener listener = new OnWheelChangedListener() {
             public void onChanged(WheelView wheel, int oldValue, int newValue) {
-                updateDays(mMonthWheel, mDayWheel);
+                updateDays();
             }
         };
 
@@ -75,13 +75,12 @@ public class EditEventActivity extends Activity {
             mEditName.setText(mEvent.getName());
             mEditNotes.setText(mEvent.getNotes());
             mMonthWheel.setCurrentItem(mEvent.getMonth());
+            updateDays();
             mDayWheel.setCurrentItem(mEvent.getDay());
         } else {
-
             mMonthWheel.setCurrentItem(mStartingMonthValue);
-            mDayWheel.setCurrentItem(0);
+            updateDays();
         }
-        updateDays(mMonthWheel, mDayWheel);
     }
 
     public void saveButtonClicked(View v) {
@@ -120,13 +119,13 @@ public class EditEventActivity extends Activity {
     /**
      * Updates day wheel. Sets max days according to selected month
      */
-    void updateDays(WheelView month, WheelView day) {
+    void updateDays() {
         Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.MONTH, month.getCurrentItem());
+        calendar.set(Calendar.MONTH, mMonthWheel.getCurrentItem());
         int maxDays = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
-        day.setViewAdapter(new DateNumericAdapter(this, 1, maxDays, calendar.get(Calendar.DAY_OF_MONTH) - 1));
-        int curDay = Math.min(maxDays, day.getCurrentItem() + 1);
-        day.setCurrentItem(curDay - 1, true);
+        mDayWheel.setViewAdapter(new DateNumericAdapter(this, 1, maxDays, calendar.get(Calendar.DAY_OF_MONTH) - 1));
+        int curDay = Math.min(maxDays, mDayWheel.getCurrentItem() + 1);
+        mDayWheel.setCurrentItem(curDay - 1, true);
     }
 
     /**

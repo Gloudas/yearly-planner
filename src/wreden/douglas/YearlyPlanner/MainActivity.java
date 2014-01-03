@@ -60,9 +60,6 @@ public class MainActivity extends Activity
     public void onResume() {
         super.onResume();
         init();
-
-        Toast.makeText(getApplicationContext(), "Current month: " + mCurrentMonth + "    current day: " + mCurrentDay,
-                Toast.LENGTH_LONG).show();
     }
 
     public void init() {
@@ -108,16 +105,14 @@ public class MainActivity extends Activity
     public void leftArrowClick() {
         mCurrentPosition--;
         if (mCurrentPosition < 0) {
-            mCurrentPosition = 0;
+            mCurrentPosition = mAdapter.getCount() - 1;
         }
         updatePosition();
     }
 
     public void rightArrowClick() {
         mCurrentPosition++;
-        if (mCurrentPosition >= mAdapter.getCount()) {
-            mCurrentPosition = mAdapter.getCount() - 1;
-        }
+        mCurrentPosition %= mAdapter.getCount();
         updatePosition();
     }
 

@@ -2,26 +2,26 @@ package wreden.douglas.YearlyPlanner;
 
 import java.util.ArrayList;
 
-import android.content.Context;
+import android.app.Activity;
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 
 public class MonthsAdapter extends PagerAdapter {
 
-    Context mContext;
+    Activity mActivity;
     DatabaseManager mDbManager;
 
-    public MonthsAdapter(Context context) {
-        mContext = context;
-        mDbManager = new DatabaseManager(mContext);
+    public MonthsAdapter(Activity activity) {
+        mActivity = activity;
+        mDbManager = new DatabaseManager(mActivity);
     }
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
 
         ArrayList<Event> events = mDbManager.getEventsByMonth(position);
-        MonthListView view = new MonthListView(mContext);
+        MonthListView view = new MonthListView(mActivity);
         view.bind(position, events);
         container.addView(view);
         return view;

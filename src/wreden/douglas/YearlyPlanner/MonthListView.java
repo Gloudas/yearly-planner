@@ -2,9 +2,9 @@ package wreden.douglas.YearlyPlanner;
 
 import java.util.ArrayList;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,17 +14,18 @@ public class MonthListView extends LinearLayout {
 
     TextView mTextViewMonth;
     ListView mListViewEvents;
+    TextView mTextLeftArrow;
+    TextView mTextRightArrow;
 
-    private Context mContext;
+    private Activity mMainActivity;
     private EventsListAdapter mAdapter;
     private int mMonth = -1;
     private ArrayList<Event> mEvents;
 
-
-    public MonthListView(Context context) {
-        super(context);
-        mContext = context;
-        LayoutInflater  inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    public MonthListView(Activity activity) {
+        super(activity);
+        mMainActivity = activity;
+        LayoutInflater  inflater = (LayoutInflater) mMainActivity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.view_month_list, this, true);
     }
 
@@ -39,8 +40,38 @@ public class MonthListView extends LinearLayout {
         mTextViewMonth = (TextView) findViewById(R.id.textView_month);
         mTextViewMonth.setText(MainActivity.getMonthString(month));
         //mTextViewMonth.setPaintFlags(mTextViewMonth.getPaintFlags() |   Paint.UNDERLINE_TEXT_FLAG);
+        mTextLeftArrow = (TextView) findViewById(R.id.textView_left_arrow);
+        mTextRightArrow = (TextView) findViewById(R.id.textView_right_arrow);
+        mTextLeftArrow.setText("<");
+        mTextRightArrow.setText(">");
+        mTextLeftArrow.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mMainActivity instanceof MainActivity) {
+                    ((MainActivity) mMainActivity).leftArrowClick();
+                }
+            }
+        });
+        mTextRightArrow.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mMainActivity instanceof MainActivity) {
+                    ((MainActivity) mMainActivity).rightArrowClick();
+                }
+            }
+        });
+        if (month == 0) {
+            mTextLeftArrow.setVisibility(View.VISIBLE);
+            mTextRightArrow.setVisibility(View.INVISIBLE);
+        } else if (month == 11) {
+            mTextLeftArrow.setVisibility(View.INVISIBLE);
+            mTextRightArrow.setVisibility(View.VISIBLE);
+        } else {
+            mTextLeftArrow.setVisibility(View.INVISIBLE);
+            mTextRightArrow.setVisibility(View.INVISIBLE);
+        }
 
-        mAdapter = new EventsListAdapter(mContext, mEvents);
+        mAdapter = new EventsListAdapter(mMainActivity, mEvents);
         mListViewEvents.setAdapter(mAdapter);
         mListViewEvents.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -51,13 +82,9 @@ public class MonthListView extends LinearLayout {
     }
 
     private void eventClicked(Event event) {
-        Intent intent = new Intent(mContext, EditEventActivity.class);
+        Intent intent = new Intent(mMainActivity, EditEventActivity.class);
         intent.putExtra(MainActivity.EVENT_ID_KEY, event.getId());
-        mContext.startActivity(intent);
-    }
-
-    public int getMonth() {
-        return mMonth;
+        mMainActivity.startActivity(intent);
     }
 
     class EventsListAdapter extends ArrayAdapter<Event> {
@@ -95,9 +122,6 @@ public class MonthListView extends LinearLayout {
             } else if (event.getMonth() == MainActivity.mCurrentMonth && event.getDay() < MainActivity.mCurrentDay) {
                 eventView.setBackground(getResources().getDrawable(R.drawable.shaded_event_background));
             }
-
-            // set to underline
-            mTextViewMonth.setPaintFlags(mTextViewMonth.getPaintFlags() |   Paint.UNDERLINE_TEXT_FLAG);
 
             return eventView;
         }

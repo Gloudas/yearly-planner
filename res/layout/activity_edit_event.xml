@@ -75,7 +75,7 @@
             android:textColor="@color/dark_gray"
             android:textSize="25dp"
             android:textStyle="italic|bold"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             />
 
     <EditText
@@ -93,28 +93,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="25dp">
 
         <Button
                 android:id="@+id/button_cancel_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/new_event_background"
+                android:background="@drawable/cancel_button_background"
                 android:text="Cancel"
                 android:textSize="20dp"
-                android:padding="10dp"
+                android:padding="13dp"
                 android:textColor="@color/white"
                 android:onClick="cancelButtonClicked"
                 />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
 
         <Button
                 android:id="@+id/button_save_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/new_event_background"
+                android:background="@drawable/save_button_background"
                 android:text="  Save  "
                 android:textSize="20dp"
-                android:padding="10dp"
+                android:padding="13dp"
                 android:textColor="@color/white"
                 android:layout_marginRight="20dp"
                 android:onClick="saveButtonClicked"
