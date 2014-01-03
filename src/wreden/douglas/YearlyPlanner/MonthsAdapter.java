@@ -37,11 +37,13 @@ public class MonthsAdapter extends PagerAdapter {
     @Override
     public int getItemPosition(Object object) {
 
+        /*
         if (object instanceof MonthListView) {
             return ((MonthListView) object).getMonth();
         }
         throw new RuntimeException("YO DOUG THERE IS A PROBLEM IN MONTHSADAPTER");
-        //return POSITION_NONE;
+        */
+        return POSITION_NONE;
     }
 
     @Override

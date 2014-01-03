@@ -2,8 +2,9 @@
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:orientation="vertical"
+        android:background="@drawable/gray_background"
         >
 
     <LinearLayout
@@ -13,17 +14,41 @@
             android:orientation="horizontal"
             android:gravity="center_horizontal">
 
+        <TextView
+                android:id="@+id/textView_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Month"
+                android:textSize="40dp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:paddingTop="2dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"
+                />
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+            android:id="@+id/linearLayout_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:background="@color/light_gray">
+
         <View
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"/>
         <ImageView
                 android:id="@+id/button_left_arrow"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.5"
                 android:contentDescription="@null"
                 android:src="@drawable/left_arrow"
+                android:layout_marginTop="4dp"
                 />
         <View
                 android:layout_width="0dp"
@@ -47,17 +72,18 @@
                 android:layout_weight="2"/>
         <ImageView
                 android:id="@+id/button_right_arrow"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.5"
                 android:contentDescription="@null"
                 android:src="@drawable/right_arrow"
+                android:layout_marginTop="4dp"
                 />
         <View
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"/>
     </LinearLayout>
+    -->
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <ListView
@@ -65,6 +91,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="7dp"
             />
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 

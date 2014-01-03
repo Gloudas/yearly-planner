@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +24,8 @@ public class MonthListView extends LinearLayout {
     public MonthListView(Context context) {
         super(context);
         mContext = context;
+        LayoutInflater  inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater.inflate(R.layout.view_month_list, this, true);
     }
 
     // Called by the adapter when this month view is being instantiated
@@ -31,8 +34,11 @@ public class MonthListView extends LinearLayout {
         mMonth = month;
         mEvents = events;
 
-        mTextViewMonth = (TextView) findViewById(R.id.textView_month);
         mListViewEvents = (ListView) findViewById(R.id.listView_events);
+
+        mTextViewMonth = (TextView) findViewById(R.id.textView_month);
+        mTextViewMonth.setText(MainActivity.getMonthString(month));
+        //mTextViewMonth.setPaintFlags(mTextViewMonth.getPaintFlags() |   Paint.UNDERLINE_TEXT_FLAG);
 
         mAdapter = new EventsListAdapter(mContext, mEvents);
         mListViewEvents.setAdapter(mAdapter);
@@ -71,18 +77,27 @@ public class MonthListView extends LinearLayout {
 
             Event event = mValues.get(position);
 
-            TextView nameText = (TextView) eventView.findViewById(R.id.NAME_TEXT_ID);
+            TextView nameText = (TextView) eventView.findViewById(R.id.textView_name);
             nameText.setText(event.getName());
-            TextView dayText = (TextView) eventView.findViewById(R.id.DAY_TEXT_ID);
-            dayText.setText(event.getDay());
-            TextView notesText = (TextView) eventView.findViewById(R.id.NOTES_TEXT_ID);
+            TextView dayText = (TextView) eventView.findViewById(R.id.textView_day);
+            dayText.setText(MainActivity.getDateSuffix(event.getDay()+1));
+
+            TextView notesText = (TextView) eventView.findViewById(R.id.textView_notes);
             notesText.setText(event.getNotes());
-            if (event.getDay() < MainActivity.mCurrentDay) {
-                eventView.setBackground(getResources().getDrawable(R.drawable.past_event_background));
+            if (event.getNotes().isEmpty()) {
+                // This event does not have attached notes
+                notesText.setVisibility(View.GONE);
+            }
+
+            // For any events that have already passed, color them blue
+            if (event.getMonth() < MainActivity.mCurrentMonth) {
+                eventView.setBackground(getResources().getDrawable(R.drawable.shaded_event_background));
+            } else if (event.getMonth() == MainActivity.mCurrentMonth && event.getDay() < MainActivity.mCurrentDay) {
+                eventView.setBackground(getResources().getDrawable(R.drawable.shaded_event_background));
             }
 
             // set to underline
-            //mTextViewMonth.setPaintFlags(mTextViewMonth.getPaintFlags() |   Paint.UNDERLINE_TEXT_FLAG);
+            mTextViewMonth.setPaintFlags(mTextViewMonth.getPaintFlags() |   Paint.UNDERLINE_TEXT_FLAG);
 
             return eventView;
         }

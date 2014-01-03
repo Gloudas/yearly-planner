@@ -71,7 +71,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 new String[]{},
                 null,
                 null,
-                null);
+                EventsEntry.COLUMN_NAME_DAY + " ASC");
         if (cursor.getCount() > 0) {
             cursor.moveToFirst();
             for (int i = 0, n = cursor.getCount(); i < n; i++) {

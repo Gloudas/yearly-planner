@@ -1,15 +1,28 @@
 package wreden.douglas.YearlyPlanner;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.text.format.Time;
+import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 public class MainActivity extends Activity
 {
+    /*
+    TODO:
+
+    Add left/right arrow click functionality
+    Clean up edit event page
+     */
+
     public static final int NUM_MONTHS = 12;
     public static final String EVENT_ID_KEY = "event_id";
+    public static final String DEFAULT_MONTH_KEY = "default_month";
+    public static final String[] MONTHS_LIST = new String[] {"January", "February", "March", "April", "May",
+            "June", "July", "August", "September", "October", "November", "December"};
 
     RelativeLayout mRelativeLayoutNewEvent;
     ViewPager mViewPager;
@@ -28,22 +41,31 @@ public class MainActivity extends Activity
         mRelativeLayoutNewEvent = (RelativeLayout) findViewById(R.id.relativeLayout_new_event);
         mViewPager = (ViewPager) findViewById(R.id.viewPager_months);
         mAdapter = new MonthsAdapter(this);
+
+        mRelativeLayoutNewEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                newEventClicked();
+            }
+        });
+
+        Time now = new Time();
+        now.setToNow();
+        mCurrentMonth = now.month;
+        mCurrentDay = now.monthDay - 1;     // Convert now.monthDay to 0 index value for comparison against database values
+        mCurrentPosition = mCurrentMonth;
 	}
 
     @Override
     public void onResume() {
         super.onResume();
         init();
+
+        Toast.makeText(getApplicationContext(), "Current month: " + mCurrentMonth + "    current day: " + mCurrentDay,
+                Toast.LENGTH_LONG).show();
     }
 
     public void init() {
-
-        Time now = new Time();
-        now.setToNow();
-        mCurrentMonth = now.month;
-        mCurrentDay = now.monthDay;
-        mCurrentPosition = mCurrentMonth;
-
         initUi();
     }
 
@@ -72,6 +94,12 @@ public class MainActivity extends Activity
         updatePosition();
     }
 
+    private void newEventClicked() {
+        Intent intent = new Intent(this, EditEventActivity.class);
+        intent.putExtra(MainActivity.DEFAULT_MONTH_KEY, mCurrentPosition);
+        startActivity(intent);
+    }
+
     // Called when user swipes or presses either of the left/right buttons
     public void updatePosition() {
         mViewPager.setCurrentItem(mCurrentPosition, true);
@@ -91,5 +119,33 @@ public class MainActivity extends Activity
             mCurrentPosition = mAdapter.getCount() - 1;
         }
         updatePosition();
+    }
+
+    public static String getMonthString(int month) {
+        return MONTHS_LIST[month];
+    }
+
+    public static String getDateSuffix(int day) {
+        // Handle exceptions cases first
+        switch (day) {
+            case 11:
+                return "11th";
+            case 12:
+                return "12th";
+            case 13:
+                return "13th";
+        }
+        int lastDigit = day % 10;
+        switch (lastDigit) {
+            case 1:
+                return ""+day+"st";
+            case 2:
+                return ""+day+"nd";
+            case 3:
+                return ""+day+"rd";
+            default:
+                return ""+day+"th";
+        }
+
     }
 }
