@@ -1,13 +1,16 @@
 package wreden.douglas.YearlyPlanner;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import wreden.douglas.YearlyPlanner.WheelView.OnWheelChangedListener;
@@ -23,6 +26,7 @@ public class EditEventActivity extends Activity {
     WheelView mMonthWheel;
     EditText mEditName;
     EditText mEditNotes;
+    ImageView mDeleteButton;
 
     Event mEvent;
     int mStartingMonthValue;    // used only when creating a new event
@@ -37,6 +41,7 @@ public class EditEventActivity extends Activity {
         mEditNotes = (EditText) findViewById(R.id.editText_event_notes);
         mDayWheel = (WheelView) findViewById(R.id.wheelView_day);
         mMonthWheel = (WheelView) findViewById(R.id.wheelView_month);
+        mDeleteButton = (ImageView) findViewById(R.id.imageView_delete);
     }
 
     @Override
@@ -77,9 +82,18 @@ public class EditEventActivity extends Activity {
             mMonthWheel.setCurrentItem(mEvent.getMonth());
             updateDays();
             mDayWheel.setCurrentItem(mEvent.getDay());
+
+            mDeleteButton.setVisibility(View.VISIBLE);
+            mDeleteButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    deleteClicked();
+                }
+            });
         } else {
             mMonthWheel.setCurrentItem(mStartingMonthValue);
             updateDays();
+            mDeleteButton.setVisibility(View.GONE);
         }
     }
 
@@ -112,6 +126,34 @@ public class EditEventActivity extends Activity {
     }
 
     public void cancelButtonClicked(View v) {
+        finish();
+    }
+
+    public void deleteClicked() {
+        if (mEvent != null) {
+            //Ask the user if they want to delete the event
+            new AlertDialog.Builder(this)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle(R.string.delete_event)
+                    .setMessage(R.string.delete_event_message)
+                    .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            deleteConfirmClicked();
+                        }
+                    })
+                    .setNegativeButton(R.string.cancel, null)
+                    .show();
+        }
+    }
+
+    public void deleteConfirmClicked() {
+        if (mEvent != null) {
+            DatabaseManager dbManager = new DatabaseManager(this);
+            dbManager.deleteEvent(mEvent);
+            Toast.makeText(getApplicationContext(), "Event deleted!",
+                    Toast.LENGTH_LONG).show();
+        }
         finish();
     }
 

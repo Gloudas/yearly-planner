@@ -33,4 +33,8 @@ public class DatabaseManager {
     public void updateEvent(Event updatedEvent) {
         sDbHelper.updateEvent(updatedEvent);
     }
+
+    public boolean deleteEvent(Event event) {
+        return sDbHelper.deleteEvent(event);
+    }
 }

@@ -112,6 +112,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
+    public boolean deleteEvent(Event event) {
+        SQLiteDatabase db = getWritableDatabase();
+        return db.delete(EventsEntry.TABLE_NAME, EventsEntry._ID + "=" + event.getId(), null) > 0;
+    }
+
     /* Defines the contents of the Races table */
     public static abstract class EventsEntry implements BaseColumns {
 
