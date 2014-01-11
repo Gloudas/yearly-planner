@@ -11,13 +11,6 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity
 {
-    /*
-    TODO:
-
-    Add left/right arrow click functionality
-    Clean up edit event page
-     */
-
     public static final int NUM_MONTHS = 12;
     public static final String EVENT_ID_KEY = "event_id";
     public static final String DEFAULT_MONTH_KEY = "default_month";

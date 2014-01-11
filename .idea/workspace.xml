@@ -30,7 +30,7 @@
     <ignored path="YearlyPlanner.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388712932032" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388347603836" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1389039280740" ignored="false" />
     <file path="/main.xml" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388726032567" ignored="false" />
     <file path="$PROJECT_DIR$/../../the-weekly-race/src/com/coolstorybros/the_weekly_race/CurrentRacesActivity.java" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388097778320" ignored="false" />
     <file path="$PROJECT_DIR$/../../the-weekly-race/src/com/coolstorybros/the_weekly_race/RaceDetailsActivity.java" changelist="a903c867-9aed-40e9-a621-20b7d6c7a395" time="1388097812178" ignored="false" />
@@ -72,7 +72,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -110,6 +109,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -119,54 +119,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view_event.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/view_event.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="68" selection-start="850" selection-end="850" vertical-scroll-proportion="-9.52">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MonthListView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MonthListView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="67" column="47" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#1655#1914#0" expanded="true" />
-                <element signature="e#1903#1904#0" expanded="true" />
-                <element signature="e#1960#2220#0" expanded="true" />
-                <element signature="e#2209#2210#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="15" selection-start="2055" selection-end="2055" vertical-scroll-proportion="0.0">
+            <state line="18" column="4" selection-start="706" selection-end="706" vertical-scroll-proportion="0.20481928">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MonthsAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MonthsAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="43" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_month_list.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="view_month_list.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/view_month_list.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="41" selection-start="2415" selection-end="2415" vertical-scroll-proportion="0.6179775">
+            <state line="62" column="41" selection-start="2415" selection-end="2415" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,7 +152,7 @@
       <file leaf-file-name="EditEventActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/EditEventActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="18" selection-start="3085" selection-end="3085" vertical-scroll-proportion="0.0">
+            <state line="33" column="17" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -187,12 +161,21 @@
       <file leaf-file-name="activity_edit_event.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/activity_edit_event.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="14" selection-start="605" selection-end="605" vertical-scroll-proportion="-10.88">
+            <state line="16" column="14" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="3" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -217,7 +200,7 @@
       <file leaf-file-name="new_event_background.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/drawable-xhdpi/new_event_background.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="69" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+            <state line="6" column="38" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -233,7 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/drawable-xhdpi/shaded_event_background.xml" />
         <option value="$PROJECT_DIR$/res/drawable-xhdpi/new_event_background.xml" />
         <option value="$PROJECT_DIR$/res/drawable-xhdpi/gray_background.xml" />
         <option value="$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/DatabaseHelper.java" />
@@ -243,12 +225,13 @@
         <option value="$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MonthsAdapter.java" />
         <option value="$PROJECT_DIR$/res/layout/view_event.xml" />
         <option value="$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/EditEventActivity.java" />
-        <option value="$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MonthListView.java" />
         <option value="$PROJECT_DIR$/res/drawable-xhdpi/save_button_background.xml" />
         <option value="$PROJECT_DIR$/res/drawable-xhdpi/cancel_button_background.xml" />
         <option value="$PROJECT_DIR$/res/layout/activity_edit_event.xml" />
         <option value="$PROJECT_DIR$/res/layout/view_month_list.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -390,8 +373,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,7 +388,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.56.102:5555" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="FA37AS903349" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Foobar" />
@@ -606,31 +589,31 @@
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.6208733" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20916115" sideWeight="0.6208733" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3314917" sideWeight="0.7401491" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25985092" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25985092" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDE talk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16629834" sideWeight="0.7401491" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16611479" sideWeight="0.6709265" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.6208733" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20916115" sideWeight="0.6208733" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3314917" sideWeight="0.6709265" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -699,27 +682,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/DatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="51" selection-start="2531" selection-end="2531" vertical-scroll-proportion="0.70197487">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/DatabaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="30" selection-start="605" selection-end="605" vertical-scroll-proportion="0.70197487">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="35" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="31" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
@@ -729,19 +691,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="13" selection-start="1342" selection-end="1342" vertical-scroll-proportion="-10.24">
-          <folding />
-        </state>
+        <state line="35" column="13" selection-start="1342" selection-end="1342" vertical-scroll-proportion="-10.24" />
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/EditEventActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="18" selection-start="3085" selection-end="3085" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MonthsAdapter.java">
@@ -753,19 +706,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/view_event.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="68" selection-start="850" selection-end="850" vertical-scroll-proportion="-9.52">
-          <folding />
-        </state>
+        <state line="23" column="68" selection-start="850" selection-end="850" vertical-scroll-proportion="-0.68" />
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="15" selection-start="2055" selection-end="2055" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-xhdpi/left_arrow.png">
@@ -787,43 +731,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/view_month_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="41" selection-start="2415" selection-end="2415" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MonthListView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="47" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1655#1914#0" expanded="true" />
-            <element signature="e#1903#1904#0" expanded="true" />
-            <element signature="e#1960#2220#0" expanded="true" />
-            <element signature="e#2209#2210#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/adt-bundle-windows-x86_64-20130514/sdk/sources/android-17/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1879" column="16" selection-start="83135" selection-end="83135" vertical-scroll-proportion="0.33295965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/EditEventActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="17" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_edit_event.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="14" selection-start="605" selection-end="605" vertical-scroll-proportion="-10.88">
+        <state line="16" column="14" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-xhdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="3" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-xhdpi/new_event_background.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="69" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+        <state line="6" column="38" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/view_month_list.xml">
+    <entry file="file://$PROJECT_DIR$/src/wreden/douglas/YearlyPlanner/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="41" selection-start="2415" selection-end="2415" vertical-scroll-proportion="0.6179775">
+        <state line="18" column="4" selection-start="706" selection-end="706" vertical-scroll-proportion="0.20481928">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
   </component>
